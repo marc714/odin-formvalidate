@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    max-width: 500px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li input:valid {
+    border: 1px solid green;
+}
+
+ul li input:invalid {
+    border: 1px solid red;
+}
+
+ul li {
+    list-style-type: none;
+}

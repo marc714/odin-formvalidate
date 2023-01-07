@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <ul>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <li>
+                    <label for="name">Name:<span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="user_name" required>
+                </li>
+                <li>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="user_password" minlength="4">
+                    <span>Please use this pattern:   </span>
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email">
+                </li>
+                <li>
+                    <label for="zip">Zip Code:</label>
+                    <input type="number" id="zip" name="user_zip"> 
+                </li>
+            </fieldset>
+        </ul>
+        
+        <div class="message"></div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form -->
